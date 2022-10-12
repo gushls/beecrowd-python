@@ -1,0 +1,7 @@
+comissao = 0.15
+nome = input()
+sal_fixo = float(input())
+valor_vendas = float(input())
+
+total = (valor_vendas * comissao) + sal_fixo
+print("TOTAL = R$ {:.2f}".format(total))
