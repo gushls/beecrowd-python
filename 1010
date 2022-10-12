@@ -1,0 +1,11 @@
+cp1, np1, vp1 = input().split()
+cp2, np2, vp2 = input().split()
+cp1 = int(cp1)
+np1 = int(np1)
+vp1 = float(vp1)
+cp2 = int(cp2)
+np2 = int(np2)
+vp2 = float(vp2)
+
+valor = (np1 * vp1) + (np2 * vp2)
+print("VALOR A PAGAR: R$ {:.2f}".format(valor))
