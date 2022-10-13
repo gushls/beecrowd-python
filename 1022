@@ -1,0 +1,27 @@
+import math
+n = int(input())
+
+for i in range(n):
+  n1, barra, d1, operador, n2, barra, d2 = input().split()
+  n1, d1, n2, d2 = int(n1), int(d1), int(n2), int(d2)
+
+  if operador == '+': 
+    aux = (n1 * d2) + (n2 * d1)
+    aux2 = (d1*d2)
+    
+  if operador == '-': 
+    aux = (n1 * d2 - n2 * d1) 
+    aux2 = (d1 * d2)
+    
+  if operador == '*': 
+    aux = (n1 * n2)
+    aux2 = (d1 * d2)
+    
+  if operador == '/': 
+    aux = (n1 * d2) 
+    aux2 = (n2 * d1)
+
+  aux3 = math.gcd(aux, aux2)
+    
+  print(f"{aux}/{aux2} = {int(aux/aux3)}/{int(aux2/aux3)}")
+ 
